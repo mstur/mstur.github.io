@@ -87,7 +87,7 @@
 </div>
 
 	    							</p>
-	    							<p class="mb-0 mt-4"><a onclick="myFunction(); changeText();" href="#top-article-1" class="btn btn-primary" id="myButton2" ><span class="ion-ios-arrow-down"></a></p>
+	    							<p class="mb-0 mt-4"><a onclick="myFunction();" href="#top-article-1" class="btn btn-primary" id="myButton2" ><span class="ion-ios-arrow-down" id="arrow2"></a></p>
 	    						</div>
 	    					<!-- </div> -->
 	    				</div>
@@ -97,14 +97,14 @@
 	    				<div class="row no-gutters align-items-center">
 	    					<!-- <div class="col-md-6"> -->
 	    						<div class="text p-md-5 p-4 ftco-animate">
-	    							<h2 class="mb-4"><font color="white">Application</font><div class="position pl-3">
+	    							<h2 class="mb-4" id= "top-article-2" ><font color="white">Application</font><div class="position pl-3">
 	    									<h5 class="mb-0"><font color="white">EBC '22 <br/></font></h5>
 	    
 	    								</div></a></h2>
 
 	    								
-	    							<p>Hey Angel-<br />Thanks for letting me read your college essay! I’ve left a few comments below.<br />Love, Dad<br /><br />-When you say “struggle,” I would replace it with a more positive word, like “character development.”<br />-Add some more context to the second paragraph. Right now, it looks like I abandoned you at the water park, which I would only do if there was a work emergency. And there was. I found that out after I got home.<br />-This “my father” character sounds like a real jerk. Maybe use a different name? Any other name. Like “family member” or “paternal figure.”<br />-That’s not how I remember your near-drowning.<br />-I was drinking diet coke when I came to pick you up. I remember because the nurse said no outside drinks.<br />-Be sure to watch your verb tenses.<br />-In hindsight, “sink or swim” does sound a bit harsh.<br />-Line 25. Find a way to spin this—for example, you now know how to perform CPR on yourself.<br />-In my defense, I could only save one of you, and your brother can’t tread water.<br />-I had no idea the therapist we got you was for your aquaphobia. I thought it was because you were having teen troubles.<br />-There’s a spelling error in “attempted emancipation.”<br />-So… all those water polo games… our father-daughter synchronized diving routines… our family vacation to Venice? I am so sorry.<br />-Beautiful conclusion. Did you mean what you said about not being on speaking terms?</p>
-	    							<p class="mb-0 mt-4"><a href="#" class="btn btn-primary"><span class="ion-ios-arrow-down"></span></a></p>
+	    							<p>Hey Angel-<br />Thanks for letting me read your college essay! I’ve left a few comments below.<br />Love, Dad<br /><br /><div id="myDIV2">-When you say “struggle,” I would replace it with a more positive word, like “character development.”<br />-Add some more context to the second paragraph. Right now, it looks like I abandoned you at the water park, which I would only do if there was a work emergency. And there was. I found that out after I got home.<br />-This “my father” character sounds like a real jerk. Maybe use a different name? Any other name. Like “family member” or “paternal figure.”<br />-That’s not how I remember your near-drowning.<br />-I was drinking diet coke when I came to pick you up. I remember because the nurse said no outside drinks.<br />-Be sure to watch your verb tenses.<br />-In hindsight, “sink or swim” does sound a bit harsh.<br />-Line 25. Find a way to spin this—for example, you now know how to perform CPR on yourself.<br />-In my defense, I could only save one of you, and your brother can’t tread water.<br />-I had no idea the therapist we got you was for your aquaphobia. I thought it was because you were having teen troubles.<br />-There’s a spelling error in “attempted emancipation.”<br />-So… all those water polo games… our father-daughter synchronized diving routines… our family vacation to Venice? I am so sorry.<br />-Beautiful conclusion. Did you mean what you said about not being on speaking terms?</div></p>
+	    							<p class="mb-0 mt-4"><a onclick="myFunction2();" href="#top-article-2" class="btn btn-primary"><span class="ion-ios-arrow-down" id="arrow"></span></a></p>
 	    						</div>
 	    					<!-- </div> -->
 	    				</div>
@@ -137,9 +137,9 @@
 	          <div class="col-lg-3">
 	            <div class="ftco-footer-widget mb-4">
 	              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-	                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-	                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-	                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+	                <li class="ftco-animate"><a href="https://twitter.com/harvardlampoon" target="_blank"><span class="icon-twitter"></span></a></li>
+	                <li class="ftco-animate"><a href="https://www.facebook.com/theharvardlampoon/" target="_blank"><span class="icon-facebook"></span></a></li>
+	                <li class="ftco-animate"><a href="https://www.instagram.com/harvardlampoon/" target="_blank"><span class="icon-instagram"></span></a></li>
 	              </ul>
 	            </div>
 	          </div>
@@ -158,10 +158,24 @@
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
-    // document.getElementById("myButton2").innnerHTML= "Less";
+        document.getElementById("arrow2").className ="ion-ios-arrow-up";
   } else {
     x.style.display = "none";
-    // document.getElementById("myButton2").innnerHTML= "More";
+            document.getElementById("arrow2").className ="ion-ios-arrow-down";
+  }
+}
+
+</script>
+<script type="text/javascript">
+  myFunction2();
+  function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("arrow").className ="ion-ios-arrow-up";
+  } else {
+    x.style.display = "none";
+        document.getElementById("arrow").className ="ion-ios-arrow-down";
   }
 }
 
